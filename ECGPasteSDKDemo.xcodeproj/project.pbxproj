@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE553065256F437400AF4CD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE553064256F437400AF4CD6 /* AppDelegate.m */; };
+		DE55306B256F437400AF4CD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55306A256F437400AF4CD6 /* ViewController.m */; };
+		DE55306E256F437400AF4CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE55306C256F437400AF4CD6 /* Main.storyboard */; };
+		DE553070256F437600AF4CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE55306F256F437600AF4CD6 /* Assets.xcassets */; };
+		DE553073256F437600AF4CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE553071256F437600AF4CD6 /* LaunchScreen.storyboard */; };
+		DE553076256F437600AF4CD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE553075256F437600AF4CD6 /* main.m */; };
+		DE553080256F437600AF4CD6 /* ECGPasteSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55307F256F437600AF4CD6 /* ECGPasteSDKDemoTests.m */; };
+		DE55308B256F437600AF4CD6 /* ECGPasteSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55308A256F437600AF4CD6 /* ECGPasteSDKDemoUITests.m */; };
+		DE5530AB256F43EE00AF4CD6 /* DDHeartRateCheckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55309C256F43EE00AF4CD6 /* DDHeartRateCheckManager.m */; };
+		DE5530AC256F43EE00AF4CD6 /* DDCommandTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55309D256F43EE00AF4CD6 /* DDCommandTask.m */; };
+		DE5530AD256F43EE00AF4CD6 /* DDBlueIToll.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55309E256F43EE00AF4CD6 /* DDBlueIToll.m */; };
+		DE5530AE256F43EE00AF4CD6 /* DDNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5530A0256F43EE00AF4CD6 /* DDNetwork.m */; };
+		DE5530AF256F43EE00AF4CD6 /* DDBluetoothClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5530A2256F43EE00AF4CD6 /* DDBluetoothClient.m */; };
+		DE5530B0256F43EE00AF4CD6 /* ElectrocardiographSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5530A5256F43EE00AF4CD6 /* ElectrocardiographSDK.m */; };
+		DE5530B1256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5530AA256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m */; };
+		DEF7BF0D257A29DC00A3EF5D /* DDECGChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF7BF0C257A29DC00A3EF5D /* DDECGChart.m */; };
+		DEF7BF13257A29F000A3EF5D /* UIScreen+DDSizeTransfrom.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF7BF11257A29EF00A3EF5D /* UIScreen+DDSizeTransfrom.m */; };
+		DEF7BF19257A2A4D00A3EF5D /* NSDecimalNumber+DDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF7BF17257A2A4D00A3EF5D /* NSDecimalNumber+DDExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE55307C256F437600AF4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE553058256F437400AF4CD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE55305F256F437400AF4CD6;
+			remoteInfo = ECGPasteSDKDemo;
+		};
+		DE553087256F437600AF4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE553058256F437400AF4CD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE55305F256F437400AF4CD6;
+			remoteInfo = ECGPasteSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE553060256F437400AF4CD6 /* ECGPasteSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECGPasteSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE553063256F437400AF4CD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE553064256F437400AF4CD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE553069256F437400AF4CD6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE55306A256F437400AF4CD6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE55306D256F437400AF4CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE55306F256F437600AF4CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE553072256F437600AF4CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE553074256F437600AF4CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE553075256F437600AF4CD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE55307B256F437600AF4CD6 /* ECGPasteSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECGPasteSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE55307F256F437600AF4CD6 /* ECGPasteSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECGPasteSDKDemoTests.m; sourceTree = "<group>"; };
+		DE553081256F437600AF4CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE553086256F437600AF4CD6 /* ECGPasteSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECGPasteSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE55308A256F437600AF4CD6 /* ECGPasteSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECGPasteSDKDemoUITests.m; sourceTree = "<group>"; };
+		DE55308C256F437600AF4CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE55309C256F43EE00AF4CD6 /* DDHeartRateCheckManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHeartRateCheckManager.m; sourceTree = "<group>"; };
+		DE55309D256F43EE00AF4CD6 /* DDCommandTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCommandTask.m; sourceTree = "<group>"; };
+		DE55309E256F43EE00AF4CD6 /* DDBlueIToll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBlueIToll.m; sourceTree = "<group>"; };
+		DE55309F256F43EE00AF4CD6 /* ElectrocardiographSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectrocardiographSDK.h; sourceTree = "<group>"; };
+		DE5530A0256F43EE00AF4CD6 /* DDNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNetwork.m; sourceTree = "<group>"; };
+		DE5530A1256F43EE00AF4CD6 /* DDHeartRateCheckRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHeartRateCheckRequest.h; sourceTree = "<group>"; };
+		DE5530A2256F43EE00AF4CD6 /* DDBluetoothClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBluetoothClient.m; sourceTree = "<group>"; };
+		DE5530A3256F43EE00AF4CD6 /* DDCommandTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCommandTask.h; sourceTree = "<group>"; };
+		DE5530A4256F43EE00AF4CD6 /* DDHeartRateCheckManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHeartRateCheckManager.h; sourceTree = "<group>"; };
+		DE5530A5256F43EE00AF4CD6 /* ElectrocardiographSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectrocardiographSDK.m; sourceTree = "<group>"; };
+		DE5530A6256F43EE00AF4CD6 /* DDBlueIToll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBlueIToll.h; sourceTree = "<group>"; };
+		DE5530A7256F43EE00AF4CD6 /* DDNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNetwork.h; sourceTree = "<group>"; };
+		DE5530A8256F43EE00AF4CD6 /* DDBluetoothClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBluetoothClient.h; sourceTree = "<group>"; };
+		DE5530A9256F43EE00AF4CD6 /* DDHeartRateCheckConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHeartRateCheckConfig.h; sourceTree = "<group>"; };
+		DE5530AA256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHeartRateCheckRequest.m; sourceTree = "<group>"; };
+		DEF7BF0B257A29DC00A3EF5D /* DDECGChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDECGChart.h; sourceTree = "<group>"; };
+		DEF7BF0C257A29DC00A3EF5D /* DDECGChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDECGChart.m; sourceTree = "<group>"; };
+		DEF7BF11257A29EF00A3EF5D /* UIScreen+DDSizeTransfrom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+DDSizeTransfrom.m"; sourceTree = "<group>"; };
+		DEF7BF12257A29F000A3EF5D /* UIScreen+DDSizeTransfrom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+DDSizeTransfrom.h"; sourceTree = "<group>"; };
+		DEF7BF17257A2A4D00A3EF5D /* NSDecimalNumber+DDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+DDExtension.m"; sourceTree = "<group>"; };
+		DEF7BF18257A2A4D00A3EF5D /* NSDecimalNumber+DDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+DDExtension.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE55305D256F437400AF4CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE553078256F437600AF4CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE553083256F437600AF4CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE553057256F437400AF4CD6 = {
+			isa = PBXGroup;
+			children = (
+				DE553062256F437400AF4CD6 /* ECGPasteSDKDemo */,
+				DE55307E256F437600AF4CD6 /* ECGPasteSDKDemoTests */,
+				DE553089256F437600AF4CD6 /* ECGPasteSDKDemoUITests */,
+				DE553061256F437400AF4CD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE553061256F437400AF4CD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE553060256F437400AF4CD6 /* ECGPasteSDKDemo.app */,
+				DE55307B256F437600AF4CD6 /* ECGPasteSDKDemoTests.xctest */,
+				DE553086256F437600AF4CD6 /* ECGPasteSDKDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE553062256F437400AF4CD6 /* ECGPasteSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE55309B256F43EE00AF4CD6 /* ECGPasteSDK */,
+				DE553063256F437400AF4CD6 /* AppDelegate.h */,
+				DE553064256F437400AF4CD6 /* AppDelegate.m */,
+				DE553069256F437400AF4CD6 /* ViewController.h */,
+				DE55306A256F437400AF4CD6 /* ViewController.m */,
+				DE55306C256F437400AF4CD6 /* Main.storyboard */,
+				DE55306F256F437600AF4CD6 /* Assets.xcassets */,
+				DE553071256F437600AF4CD6 /* LaunchScreen.storyboard */,
+				DE553074256F437600AF4CD6 /* Info.plist */,
+				DE553075256F437600AF4CD6 /* main.m */,
+			);
+			path = ECGPasteSDKDemo;
+			sourceTree = "<group>";
+		};
+		DE55307E256F437600AF4CD6 /* ECGPasteSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE55307F256F437600AF4CD6 /* ECGPasteSDKDemoTests.m */,
+				DE553081256F437600AF4CD6 /* Info.plist */,
+			);
+			path = ECGPasteSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		DE553089256F437600AF4CD6 /* ECGPasteSDKDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE55308A256F437600AF4CD6 /* ECGPasteSDKDemoUITests.m */,
+				DE55308C256F437600AF4CD6 /* Info.plist */,
+			);
+			path = ECGPasteSDKDemoUITests;
+			sourceTree = "<group>";
+		};
+		DE55309B256F43EE00AF4CD6 /* ECGPasteSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DE55309F256F43EE00AF4CD6 /* ElectrocardiographSDK.h */,
+				DE5530A5256F43EE00AF4CD6 /* ElectrocardiographSDK.m */,
+				DE5530A4256F43EE00AF4CD6 /* DDHeartRateCheckManager.h */,
+				DE55309C256F43EE00AF4CD6 /* DDHeartRateCheckManager.m */,
+				DE5530A3256F43EE00AF4CD6 /* DDCommandTask.h */,
+				DE55309D256F43EE00AF4CD6 /* DDCommandTask.m */,
+				DE5530A6256F43EE00AF4CD6 /* DDBlueIToll.h */,
+				DE55309E256F43EE00AF4CD6 /* DDBlueIToll.m */,
+				DE5530A7256F43EE00AF4CD6 /* DDNetwork.h */,
+				DE5530A0256F43EE00AF4CD6 /* DDNetwork.m */,
+				DE5530A1256F43EE00AF4CD6 /* DDHeartRateCheckRequest.h */,
+				DE5530AA256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m */,
+				DE5530A8256F43EE00AF4CD6 /* DDBluetoothClient.h */,
+				DE5530A2256F43EE00AF4CD6 /* DDBluetoothClient.m */,
+				DE5530A9256F43EE00AF4CD6 /* DDHeartRateCheckConfig.h */,
+				DEF7BF0B257A29DC00A3EF5D /* DDECGChart.h */,
+				DEF7BF0C257A29DC00A3EF5D /* DDECGChart.m */,
+				DEF7BF12257A29F000A3EF5D /* UIScreen+DDSizeTransfrom.h */,
+				DEF7BF11257A29EF00A3EF5D /* UIScreen+DDSizeTransfrom.m */,
+				DEF7BF18257A2A4D00A3EF5D /* NSDecimalNumber+DDExtension.h */,
+				DEF7BF17257A2A4D00A3EF5D /* NSDecimalNumber+DDExtension.m */,
+			);
+			path = ECGPasteSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE55305F256F437400AF4CD6 /* ECGPasteSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE55308F256F437600AF4CD6 /* Build configuration list for PBXNativeTarget "ECGPasteSDKDemo" */;
+			buildPhases = (
+				DE55305C256F437400AF4CD6 /* Sources */,
+				DE55305D256F437400AF4CD6 /* Frameworks */,
+				DE55305E256F437400AF4CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECGPasteSDKDemo;
+			productName = ECGPasteSDKDemo;
+			productReference = DE553060256F437400AF4CD6 /* ECGPasteSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE55307A256F437600AF4CD6 /* ECGPasteSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE553092256F437600AF4CD6 /* Build configuration list for PBXNativeTarget "ECGPasteSDKDemoTests" */;
+			buildPhases = (
+				DE553077256F437600AF4CD6 /* Sources */,
+				DE553078256F437600AF4CD6 /* Frameworks */,
+				DE553079256F437600AF4CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE55307D256F437600AF4CD6 /* PBXTargetDependency */,
+			);
+			name = ECGPasteSDKDemoTests;
+			productName = ECGPasteSDKDemoTests;
+			productReference = DE55307B256F437600AF4CD6 /* ECGPasteSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE553085256F437600AF4CD6 /* ECGPasteSDKDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE553095256F437600AF4CD6 /* Build configuration list for PBXNativeTarget "ECGPasteSDKDemoUITests" */;
+			buildPhases = (
+				DE553082256F437600AF4CD6 /* Sources */,
+				DE553083256F437600AF4CD6 /* Frameworks */,
+				DE553084256F437600AF4CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE553088256F437600AF4CD6 /* PBXTargetDependency */,
+			);
+			name = ECGPasteSDKDemoUITests;
+			productName = ECGPasteSDKDemoUITests;
+			productReference = DE553086256F437600AF4CD6 /* ECGPasteSDKDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE553058256F437400AF4CD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DE55305F256F437400AF4CD6 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					DE55307A256F437600AF4CD6 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = DE55305F256F437400AF4CD6;
+					};
+					DE553085256F437600AF4CD6 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = DE55305F256F437400AF4CD6;
+					};
+				};
+			};
+			buildConfigurationList = DE55305B256F437400AF4CD6 /* Build configuration list for PBXProject "ECGPasteSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE553057256F437400AF4CD6;
+			productRefGroup = DE553061256F437400AF4CD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE55305F256F437400AF4CD6 /* ECGPasteSDKDemo */,
+				DE55307A256F437600AF4CD6 /* ECGPasteSDKDemoTests */,
+				DE553085256F437600AF4CD6 /* ECGPasteSDKDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE55305E256F437400AF4CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE553073256F437600AF4CD6 /* LaunchScreen.storyboard in Resources */,
+				DE553070256F437600AF4CD6 /* Assets.xcassets in Resources */,
+				DE55306E256F437400AF4CD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE553079256F437600AF4CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE553084256F437600AF4CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE55305C256F437400AF4CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5530AE256F43EE00AF4CD6 /* DDNetwork.m in Sources */,
+				DE55306B256F437400AF4CD6 /* ViewController.m in Sources */,
+				DE5530B0256F43EE00AF4CD6 /* ElectrocardiographSDK.m in Sources */,
+				DE5530AF256F43EE00AF4CD6 /* DDBluetoothClient.m in Sources */,
+				DE553065256F437400AF4CD6 /* AppDelegate.m in Sources */,
+				DEF7BF13257A29F000A3EF5D /* UIScreen+DDSizeTransfrom.m in Sources */,
+				DE553076256F437600AF4CD6 /* main.m in Sources */,
+				DE5530AC256F43EE00AF4CD6 /* DDCommandTask.m in Sources */,
+				DEF7BF19257A2A4D00A3EF5D /* NSDecimalNumber+DDExtension.m in Sources */,
+				DE5530B1256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m in Sources */,
+				DE5530AD256F43EE00AF4CD6 /* DDBlueIToll.m in Sources */,
+				DE5530AB256F43EE00AF4CD6 /* DDHeartRateCheckManager.m in Sources */,
+				DEF7BF0D257A29DC00A3EF5D /* DDECGChart.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE553077256F437600AF4CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE553080256F437600AF4CD6 /* ECGPasteSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE553082256F437600AF4CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE55308B256F437600AF4CD6 /* ECGPasteSDKDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE55307D256F437600AF4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE55305F256F437400AF4CD6 /* ECGPasteSDKDemo */;
+			targetProxy = DE55307C256F437600AF4CD6 /* PBXContainerItemProxy */;
+		};
+		DE553088256F437600AF4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE55305F256F437400AF4CD6 /* ECGPasteSDKDemo */;
+			targetProxy = DE553087256F437600AF4CD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE55306C256F437400AF4CD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE55306D256F437400AF4CD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE553071256F437600AF4CD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE553072256F437600AF4CD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE55308D256F437600AF4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE55308E256F437600AF4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE553090256F437600AF4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P46X7KJN3K;
+				INFOPLIST_FILE = ECGPasteSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ym.ElectrocardiographSDK.ECGPasteSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE553091256F437600AF4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P46X7KJN3K;
+				INFOPLIST_FILE = ECGPasteSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ym.ElectrocardiographSDK.ECGPasteSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE553093256F437600AF4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ECGPasteSDKDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ym.ElectrocardiographSDK.ECGPasteSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECGPasteSDKDemo.app/ECGPasteSDKDemo";
+			};
+			name = Debug;
+		};
+		DE553094256F437600AF4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ECGPasteSDKDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ym.ElectrocardiographSDK.ECGPasteSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECGPasteSDKDemo.app/ECGPasteSDKDemo";
+			};
+			name = Release;
+		};
+		DE553096256F437600AF4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ECGPasteSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ym.ElectrocardiographSDK.ECGPasteSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ECGPasteSDKDemo;
+			};
+			name = Debug;
+		};
+		DE553097256F437600AF4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ECGPasteSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ym.ElectrocardiographSDK.ECGPasteSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ECGPasteSDKDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE55305B256F437400AF4CD6 /* Build configuration list for PBXProject "ECGPasteSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE55308D256F437600AF4CD6 /* Debug */,
+				DE55308E256F437600AF4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE55308F256F437600AF4CD6 /* Build configuration list for PBXNativeTarget "ECGPasteSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE553090256F437600AF4CD6 /* Debug */,
+				DE553091256F437600AF4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE553092256F437600AF4CD6 /* Build configuration list for PBXNativeTarget "ECGPasteSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE553093256F437600AF4CD6 /* Debug */,
+				DE553094256F437600AF4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE553095256F437600AF4CD6 /* Build configuration list for PBXNativeTarget "ECGPasteSDKDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE553096256F437600AF4CD6 /* Debug */,
+				DE553097256F437600AF4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE553058256F437400AF4CD6 /* Project object */;
+}
