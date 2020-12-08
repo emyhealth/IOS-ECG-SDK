@@ -13,7 +13,7 @@
 ```oc
  
     //DDHeartRateCheckManagerDelegate
- /// 扫描得到广播选取你要连接点设备
+ /// 扫描得到广播选取你要连接的设备
 /// @param peripheral ——
 /// @param advertisementData ——
 /// @param RSSI ——
@@ -122,7 +122,7 @@
    //获取指令指令
    NSData *data = [task encodeCommand];
 ```
-### 3)设置 ElectrocardiographSDK提供了如下方法
+### 3)ElectrocardiographSDK提供了如下方法
 
 ```oc
    /// 初始化
