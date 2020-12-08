@@ -21,7 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>hhh</string>
+	<string>开启蓝牙权限后，才能连接设备</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>开启蓝牙权限后，才能连接设备</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>

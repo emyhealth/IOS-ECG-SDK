@@ -18,7 +18,6 @@
 		DE5530AB256F43EE00AF4CD6 /* DDHeartRateCheckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55309C256F43EE00AF4CD6 /* DDHeartRateCheckManager.m */; };
 		DE5530AC256F43EE00AF4CD6 /* DDCommandTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55309D256F43EE00AF4CD6 /* DDCommandTask.m */; };
 		DE5530AD256F43EE00AF4CD6 /* DDBlueIToll.m in Sources */ = {isa = PBXBuildFile; fileRef = DE55309E256F43EE00AF4CD6 /* DDBlueIToll.m */; };
-		DE5530AE256F43EE00AF4CD6 /* DDNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5530A0256F43EE00AF4CD6 /* DDNetwork.m */; };
 		DE5530AF256F43EE00AF4CD6 /* DDBluetoothClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5530A2256F43EE00AF4CD6 /* DDBluetoothClient.m */; };
 		DE5530B0256F43EE00AF4CD6 /* ElectrocardiographSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5530A5256F43EE00AF4CD6 /* ElectrocardiographSDK.m */; };
 		DE5530B1256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5530AA256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m */; };
@@ -65,14 +64,12 @@
 		DE55309D256F43EE00AF4CD6 /* DDCommandTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCommandTask.m; sourceTree = "<group>"; };
 		DE55309E256F43EE00AF4CD6 /* DDBlueIToll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBlueIToll.m; sourceTree = "<group>"; };
 		DE55309F256F43EE00AF4CD6 /* ElectrocardiographSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectrocardiographSDK.h; sourceTree = "<group>"; };
-		DE5530A0256F43EE00AF4CD6 /* DDNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNetwork.m; sourceTree = "<group>"; };
 		DE5530A1256F43EE00AF4CD6 /* DDHeartRateCheckRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHeartRateCheckRequest.h; sourceTree = "<group>"; };
 		DE5530A2256F43EE00AF4CD6 /* DDBluetoothClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBluetoothClient.m; sourceTree = "<group>"; };
 		DE5530A3256F43EE00AF4CD6 /* DDCommandTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCommandTask.h; sourceTree = "<group>"; };
 		DE5530A4256F43EE00AF4CD6 /* DDHeartRateCheckManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHeartRateCheckManager.h; sourceTree = "<group>"; };
 		DE5530A5256F43EE00AF4CD6 /* ElectrocardiographSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectrocardiographSDK.m; sourceTree = "<group>"; };
 		DE5530A6256F43EE00AF4CD6 /* DDBlueIToll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBlueIToll.h; sourceTree = "<group>"; };
-		DE5530A7256F43EE00AF4CD6 /* DDNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNetwork.h; sourceTree = "<group>"; };
 		DE5530A8256F43EE00AF4CD6 /* DDBluetoothClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBluetoothClient.h; sourceTree = "<group>"; };
 		DE5530A9256F43EE00AF4CD6 /* DDHeartRateCheckConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHeartRateCheckConfig.h; sourceTree = "<group>"; };
 		DE5530AA256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHeartRateCheckRequest.m; sourceTree = "<group>"; };
@@ -175,8 +172,6 @@
 				DE55309D256F43EE00AF4CD6 /* DDCommandTask.m */,
 				DE5530A6256F43EE00AF4CD6 /* DDBlueIToll.h */,
 				DE55309E256F43EE00AF4CD6 /* DDBlueIToll.m */,
-				DE5530A7256F43EE00AF4CD6 /* DDNetwork.h */,
-				DE5530A0256F43EE00AF4CD6 /* DDNetwork.m */,
 				DE5530A1256F43EE00AF4CD6 /* DDHeartRateCheckRequest.h */,
 				DE5530AA256F43EE00AF4CD6 /* DDHeartRateCheckRequest.m */,
 				DE5530A8256F43EE00AF4CD6 /* DDBluetoothClient.h */,
@@ -321,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5530AE256F43EE00AF4CD6 /* DDNetwork.m in Sources */,
 				DE55306B256F437400AF4CD6 /* ViewController.m in Sources */,
 				DE5530B0256F43EE00AF4CD6 /* ElectrocardiographSDK.m in Sources */,
 				DE5530AF256F43EE00AF4CD6 /* DDBluetoothClient.m in Sources */,

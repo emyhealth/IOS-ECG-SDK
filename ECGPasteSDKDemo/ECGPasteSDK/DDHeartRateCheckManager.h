@@ -39,7 +39,7 @@ typedef enum DDHeartRateCheckState {
     DDHeartRateCheckStateExceptionFinish,                  //逻辑断开蓝牙设备
     DDHeartRateCheckStateWriteDataFail,                 //蓝牙写入数据失败
     DDHeartRateCheckStateReadDataFail,                 //订阅特征数据通知被停止
-    
+//    11
     //蓝牙状态
     DDHeartRateCheckStateBlueResetting,                 //蓝牙重置
     DDHeartRateCheckStateBlueUnsupported,               //设备不支持
@@ -85,7 +85,7 @@ typedef void(^DDCheckStateBlcok)(DDHeartRateCheckState state);
 
 @protocol DDHeartRateCheckManagerDelegate <NSObject>
 
-/// 扫描广播
+/// 扫描得到广播
 /// @param peripheral ——
 /// @param advertisementData ——
 /// @param RSSI ——
@@ -115,9 +115,11 @@ typedef void(^DDCheckStateBlcok)(DDHeartRateCheckState state);
 
 //=============================================自动模式者只需要调用以下方式============================================
 
-/// 开始操作
-/// @param automatic 是否需要自动采集数据如不需要就需要自己调用发送指令如需要只需调用：开始操作，停止一切操作 并且断开连接，选择一台设备信息连接这三个方法即可其他
+/// 开始操作这时
+/// @param automatic 是否需要自动采集数据如不需要就需要自己调用发送指令如需要只需调用：开始操作，停止一切操作 并且断开连接，停止扫描设备 选择一台设备信息连接这四个方法即可其他
 - (void)startCheckAutomatic:(BOOL)automatic;
+
+
 
 /// 停止一切操作 并且断开连接
 ///signOut YES表示退出程序 蓝牙断开对象释放  NO 表示断开蓝牙连接还可以继续连接

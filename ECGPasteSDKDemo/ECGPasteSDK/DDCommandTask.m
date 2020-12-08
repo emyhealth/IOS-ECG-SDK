@@ -2,8 +2,8 @@
 //  DDCommandTask.m
 //  healthCheck
 //
-//  Created by admin on 2019/10/24.
-//  Copyright © 2019 xlf. All rights reserved.
+//  Created by tanshushu on 2020/11/12.
+//  
 //
 
 #import "DDCommandTask.h"
@@ -28,6 +28,7 @@
         _duration = DDCommandTaskDuration;
         _request = request;
         _type = type;
+        
     }
     return self;
 }

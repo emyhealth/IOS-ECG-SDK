@@ -85,6 +85,7 @@ static DDHeartRateCheckManager *instance = nil;
     [DDBlueIToll DDLog:@"---blue---开始绑定"];
     self.currentFlowState = DDFlowStateBind;
     @DDWeakObj(self);
+    
     [[DDCommandTask createTaskWithType:DDBLECommandTypeBindUserID request:self.checkRequest success:^(BOOL success, NSString *byteStr) {
         [DDBlueIToll DDLog:@"---blue---绑定成功"];
         @DDStrongObj(self);
@@ -689,33 +690,36 @@ static DDHeartRateCheckManager *instance = nil;
 #pragma mark ----- 内部处理
 - (NSData *)getECGByteDataWithError:(NSError **)error
 {
-    *error = nil;
-    /*
-     一个包 6个点 一个包20字节 2字节头部，每个点3字节，设备采集是10ms/点, 1s相当于采集100个点
-     最低采集时长为5分钟，5分钟=5*60*100点=30000个点
-     5分钟的字节长度应该为30000点*3字节=90000字节
-     数据不足5分钟可以补点，最大补点数为10s的数据，10s*100点/s * 3字节 = 3000字节
-     */
-    NSInteger timer = [[ElectrocardiographSDK shared]myTestTimer];
-    NSUInteger minSize = timer * 60 * 100 *3;
-    NSUInteger length = self.ecgData.length;
-    NSUInteger offset = 3000;
-    if (length < minSize) {
-        NSUInteger lessCount = minSize - length;
-        if (lessCount > offset) {
-            *error = [NSError errorWithDomain:@"DataExceptionErrorDomain" code:kDDCheckECGDataExceptionLocalError userInfo:nil];
-            [DDBlueIToll DDLog:@"ecg数据长度不足规定时间不过可以根据自身情况修改"];
-            return nil;
-        } else {
-            for (int i = 0; i < lessCount; i++) {
-                Byte byte[] = {0x00};
-                [self.ecgData appendData:[NSData dataWithBytes:byte length:1]];
-            }
-            return [self.ecgData copy];
-        }
-    } else {
-        return [self.ecgData copy];
-    }
+//    *error = nil;
+//    /*
+//     一个包 6个点 一个包20字节 2字节头部，每个点3字节，设备采集是10ms/点, 1s相当于采集100个点
+//     最低采集时长为5分钟，5分钟=5*60*100点=30000个点
+//     5分钟的字节长度应该为30000点*3字节=90000字节
+//     数据不足5分钟可以补点，最大补点数为10s的数据，10s*100点/s * 3字节 = 3000字节
+//     */
+//    NSInteger timer = [[ElectrocardiographSDK shared]myTestTimer];
+//    NSUInteger minSize = timer * 60 * 100 *3;
+//    NSUInteger length = self.ecgData.length;
+//    NSUInteger offset = 3000;
+//    if (length < minSize) {
+//        NSUInteger lessCount = minSize - length;
+//        if (lessCount > offset) {
+//            *error = [NSError errorWithDomain:@"DataExceptionErrorDomain" code:kDDCheckECGDataExceptionLocalError userInfo:nil];
+//            [DDBlueIToll DDLog:@"ecg数据长度不足规定时间不过可以根据自身情况修改"];
+//            return nil;
+//        } else {
+//            for (int i = 0; i < lessCount; i++) {
+//                Byte byte[] = {0x00};
+//                [self.ecgData appendData:[NSData dataWithBytes:byte length:1]];
+//            }
+//            return [self.ecgData copy];
+//        }
+//    } else {
+//        return [self.ecgData copy];
+//    }
+   /* 上面代码为检查时间内的数据是否为规定长度*/
+
+    return [self.ecgData copy];
 }
 - (void)clearAllLastState
 {

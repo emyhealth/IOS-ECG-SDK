@@ -15,7 +15,7 @@ static ElectrocardiographSDK *instance = nil;
     dispatch_once(&onceToken, ^{
         instance = [[ElectrocardiographSDK alloc]init];
         [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"DDProduction"];
-        [[NSUserDefaults standardUserDefaults]setInteger:1 forKey:@"DDTestTimer"];
+        [[NSUserDefaults standardUserDefaults]setInteger:5 forKey:@"DDTestTimer"];
     });
     return instance;
 }
